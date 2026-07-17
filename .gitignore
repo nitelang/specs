@@ -1,0 +1,5 @@
+# python
+.venv
+# zensical
+site
+.cache
