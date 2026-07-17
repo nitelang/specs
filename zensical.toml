@@ -37,17 +37,7 @@ copyright = """
 Copyright &copy; 2026 nitelang
 """
 
-# Zensical supports both implicit navigation and explicitly defined navigation.
-# If you decide not to define a navigation here then Zensical will simply
-# derive the navigation structure from the directory structure of your
-# "docs_dir". The definition below demonstrates how a navigation structure
-# can be defined using TOML syntax.
-#
-# Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+repo_url = "https://github.com/nitelang/specs"
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -128,7 +118,7 @@ features = [
     # will generate a button that allows the user to view the Markdown
     # code for the current page.
     # https://zensical.org/docs/setup/repository/#content-actions
-    #"content.action.view",
+    "content.action.view",
 
     # Code annotations allow you to add an icon with a tooltip to your
     # code blocks to provide explanations at crucial points.
@@ -195,7 +185,7 @@ features = [
     # In order to provide a better user experience on slow connections when
     # using instant navigation, a progress indicator can be enabled.
     # https://zensical.org/docs/setup/navigation/#progress-indicator
-    #"navigation.instant.progress",
+    "navigation.instant.progress",
 
     # When navigation paths are activated, a breadcrumb navigation is rendered
     # above the title of each page
@@ -300,11 +290,11 @@ toggle.name = "Switch to light mode"
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-[project.extra]
-alternate = [
-    { name = "English", link = "/", lang = "en" },
-    { name = "Русский", link = "/ru/", lang = "ru" }
-]
+#[project.extra] # zensical badly support multilanguage for now
+#alternate = [
+#    { name = "English", link = "/", lang = "en" },
+#    { name = "Русский", link = "/ru/", lang = "ru" }
+#]
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
