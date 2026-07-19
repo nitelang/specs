@@ -38,6 +38,9 @@ Copyright &copy; 2026 nitelang
 """
 
 repo_url = "https://github.com/nitelang/specs"
+edit_uri = "edit/main/docs/"
+
+exclude_docs = "README.md"
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -112,7 +115,7 @@ features = [
     # will generate an edit button for the page. This works for common
     # repository hosting services.
     # https://zensical.org/docs/setup/repository/#content-actions
-    #"content.action.edit",
+    "content.action.edit",
 
     # If you have a repository configured and turn on this feature, Zensical
     # will generate a button that allows the user to view the Markdown

@@ -13,4 +13,4 @@ Any usage of control characters within source code is permitted, except for **Ca
 Usage of the **Null (U+0000)** character is forbidden in standard. The compiler behaviour is undetermined.
 
 ## Line endings
-Language treats invisible line endings characters as trivia, except for [multiline string literals](tokens.md).
+Language treats invisible line endings characters as trivia, except for [multiline string literals](02-tokens.md).
