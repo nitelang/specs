@@ -8,6 +8,9 @@ During lexical analysis source file text is separated into distinctive meaningfu
 
 Each source contains at least one *end-of-file* token.
 
+## Identifiers
+TODO
+
 ## Punctuators and operators
 |Preview|Name|Description|
 |------:|:---|:----------|
@@ -16,6 +19,12 @@ Each source contains at least one *end-of-file* token.
 |`:`|Colon|
 |`->`|Retusa|Defines return type|
 |`::`|DoubleColon|Part of the qualified paths|
+|`{`|OpenBrace
+|`}`|CloseBrace
+|`(`|OpenParen
+|`)`|CloseParen
+|`[`|OpenBracket
+|`]`|ClosBracket
 |`+`|Plus|
 |`+=`|PlusEquals|
 |`-`|Minus|
@@ -27,15 +36,15 @@ Each source contains at least one *end-of-file* token.
 |`%`|Percent|
 |`%=`|PercentEuqlas|
 |`&`|Ampersand|
-|`&&`|DoubleAmpersand|
 |`&=`|AmpersandEquals|
+|`&&`|DoubleAmpersand|
 |`^`|Caret|
 |`^=`|CaretEquals|
 |`|`|Bar|
-|`||`|DoubleBar|
 |`|=`|BarEquals|
+|`||`|DoubleBar|
 |`~`|Tilde|
-|`~`|TildeEquals|
+|`~=`|TildeEquals|
 |`!`|Exclamation|
 |`..`|Range|
 |`..=`|InclusiveRange|
@@ -56,13 +65,16 @@ Each source contains at least one *end-of-file* token.
 [^1]: Depending on context right shift operators can be treated as several generic parameter list close tokens.
 
 ## Literals
+TODO
 
 ## Keywords
-
-### Type keywords
-
-### Weak keywords
+Keywords is really much identifiers, except they cannot be used as such. They are reserved words language use in different contexts.
 
 ### Strong keywords
+TODO
+
+### Contextual keywords
+TODO
 
 ### Reserved keywords
+TODO
