@@ -2,9 +2,8 @@
 icon: lucide/braces
 ---
 
-
 # Tokens
-During lexical analysis source file text is separated into distinctive meaningful tokens.
+During lexical analysis, source file text is separated into distinctive meaningful tokens.
 
 Each source contains at least one *end-of-file* token.
 
@@ -33,8 +32,8 @@ digit  = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
    https://en.wikipedia.org/wiki/Unicode_character_property#General_Category
 
 !!! Note
-    As you can see: the identifier support not only ASCII letters, but the whole letter unicode category.
-    This means you can use your native language for identifier, for example `привет_мир` is a valid identifier.
+    As you can see: the identifiers support not only ASCII letters, but the whole letter unicode category.
+    This means you can use your native language for identifiers, for example `привет_мир` is a valid identifier.
 
 ### Escaped identifier
 An escaped identifier is enclosed in backtick characters and may contain any character, including those that are otherwise invalid in identifiers. Escape sequences are supported inside escaped identifiers.
@@ -74,14 +73,14 @@ hex_digit =
 |`.`|Dot|
 |`,`|Comma|
 |`:`|Colon|
-|`->`|Retusa|Defines return type|
+|`->`|Retusa|Defines the return type|
 |`::`|DoubleColon|Part of the qualified paths|
-|`{`|OpenBrace
-|`}`|CloseBrace
-|`(`|OpenParen
-|`)`|CloseParen
-|`[`|OpenBracket
-|`]`|ClosBracket
+|`{`|OpenBrace|
+|`}`|CloseBrace|
+|`(`|OpenParen|
+|`)`|CloseParen|
+|`[`|OpenBracket|
+|`]`|CloseBracket|
 |`+`|Plus|
 |`+=`|PlusEquals|
 |`-`|Minus|
@@ -91,7 +90,7 @@ hex_digit =
 |`/`|Slash|
 |`/=`|SlashEquals|
 |`%`|Percent|
-|`%=`|PercentEuqlas|
+|`%=`|PercentEquals|
 |`&`|Ampersand|
 |`&=`|AmpersandEquals|
 |`&&`|DoubleAmpersand|
@@ -125,7 +124,7 @@ hex_digit =
 TODO
 
 ## Keywords
-Keywords is really much identifiers, except they cannot be used as such. They are reserved words language use in different contexts.
+Keywords are really much identifiers, except they cannot be used as such. They are reserved words that language use in different contexts.
 
 ### Strong keywords
 TODO
