@@ -1,5 +1,6 @@
 ---
 icon: lucide/text-initial
+description: Nite language input format.
 ---
 
 # Input format

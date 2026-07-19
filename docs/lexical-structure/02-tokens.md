@@ -1,5 +1,6 @@
 ---
 icon: lucide/braces
+description: Lexical tokens defined in the Nite language specification.
 ---
 
 # Tokens
