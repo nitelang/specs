@@ -239,7 +239,7 @@ toggle.name = "Switch to light mode"
 
 [project.extra.analytics]
 provider = "google"
-property = "G-XXXXXXXXXX"
+property = "G-RJZJLSWERQ"
 
 [project.extra.analytics.feedback]
 title = "Was this page helpful?"
@@ -256,7 +256,7 @@ name = "This page could be improved"
 data = 0
 note = """
   Thanks for your feedback! Help us improve this page by
-  using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  using our <a href="https://github.com/nitelang/specs/issues/new" target="_blank" rel="noopener">feedback form</a>.
 """
 
 [[project.extra.social]]
