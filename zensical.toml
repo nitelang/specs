@@ -8,6 +8,7 @@ Copyright &copy; 2026 nitelang
 """
 
 repo_url = "https://github.com/nitelang/specs"
+repo_name = "nitelang/specs"
 edit_uri = "edit/main/docs/"
 
 exclude_docs = "README.md"
@@ -237,36 +238,38 @@ toggle.name = "Switch to light mode"
 #    { name = "Русский", link = "/ru/", lang = "ru" }
 #]
 #
-[project.extra.consent]
-title = "Cookie consent"
-description = """
-    We use cookies to recognize your repeated visits and preferences, as well
-    as to measure the effectiveness of our documentation and whether users
-    find what they're searching for. With your consent, you're helping us to
-    make our documentation better.
-"""
 
-[project.extra.analytics]
-provider = "google"
-property = "G-RJZJLSWERQ"
-
-[project.extra.analytics.feedback]
-title = "Was this page helpful?"
-
-[[project.extra.analytics.feedback.ratings]]
-icon = "material/emoticon-happy-outline"
-name = "This page was helpful"
-data = 1
-note = "Thanks for your feedback!"
-
-[[project.extra.analytics.feedback.ratings]]
-icon = "material/emoticon-sad-outline"
-name = "This page could be improved"
-data = 0
-note = """
-  Thanks for your feedback! Help us improve this page by
-  using our <a href="https://github.com/nitelang/specs/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
-"""
+# === disable this for now ===
+#[project.extra.consent]
+#title = "Cookie consent"
+#description = """
+#    We use cookies to recognize your repeated visits and preferences, as well
+#    as to measure the effectiveness of our documentation and whether users
+#    find what they're searching for. With your consent, you're helping us to
+#    make our documentation better.
+#"""
+#
+#[project.extra.analytics]
+#provider = "google"
+#property = "G-MEOWMOEW73"
+#
+#[project.extra.analytics.feedback]
+#title = "Was this page helpful?"
+#
+#[[project.extra.analytics.feedback.ratings]]
+#icon = "material/emoticon-happy-outline"
+#name = "This page was helpful"
+#data = 1
+#note = "Thanks for your feedback!"
+#
+#[[project.extra.analytics.feedback.ratings]]
+#icon = "material/emoticon-sad-outline"
+#name = "This page could be improved"
+#data = 0
+#note = """
+#  Thanks for your feedback! Help us improve this page by
+#  using our <a href="https://github.com/nitelang/specs/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+#"""
 
 [[project.extra.social]]
 icon = "fontawesome/brands/discord"
