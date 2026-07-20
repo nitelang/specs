@@ -2,12 +2,12 @@
 site_name = "Nite Specification"
 site_description = "Nite program language official specification."
 site_author = "NiTiSon"
-site_url = "https://nitelang.github.io/specs"
+site_url = "https://nitelang.github.io/"
 copyright = """
 Copyright &copy; 2026 nitelang
 """
 
-repo_url = "https://github.com/nitelang/specs"
+repo_url = "https://github.com/nitelang/"
 repo_name = "nitelang/specs"
 edit_uri = "edit/main/docs/"
 
@@ -277,7 +277,7 @@ link = "https://discord.gg/skqxUuu8MR"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/nitelang/specs"
+link = "https://github.com/nitelang/"
 
 # ----------------------------------------------------------------------------
 # In this section you can configure the Markdown extensions that are used when
@@ -322,3 +322,7 @@ combine_header_slug = true
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true
 [project.markdown_extensions.pymdownx.tilde]
+[project.markdown_extensions.zensical.extensions.preview]
+configurations = [
+    { targets.include = [] }
+]
