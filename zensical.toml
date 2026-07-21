@@ -1,6 +1,6 @@
 [project]
-site_name = "Nite Specification"
-site_description = "Nite program language official specification."
+site_name = "Nite Programming Language"
+site_description = "Nite program language official site."
 site_author = "NiTiSon"
 site_url = "https://nitelang.github.io/"
 copyright = """
@@ -43,40 +43,17 @@ custom_dir = "overrides"
 language = "en"
 
 features = [
-    # Zensical includes an announcement bar. This feature allows users to
-    # dismiss it when they have read the announcement.
     # https://zensical.org/docs/setup/header/#announcement-bar
     "announce.dismiss",
-
-    # If you have a repository configured and turn on this feature, Zensical
-    # will generate an edit button for the page. This works for common
-    # repository hosting services.
     # https://zensical.org/docs/setup/repository/#content-actions
     "content.action.edit",
-
-    # If you have a repository configured and turn on this feature, Zensical
-    # will generate a button that allows the user to view the Markdown
-    # code for the current page.
-    # https://zensical.org/docs/setup/repository/#content-actions
     "content.action.view",
-
-    # Code annotations allow you to add an icon with a tooltip to your
-    # code blocks to provide explanations at crucial points.
     # https://zensical.org/docs/authoring/code-blocks/#code-annotations
     "content.code.annotate",
-
-    # This feature turns on a button in code blocks that allow users to
-    # copy the content to their clipboard without first selecting it.
     # https://zensical.org/docs/authoring/code-blocks/#code-copy-button
     "content.code.copy",
-
-    # Code blocks can include a button to allow for the selection of line
-    # ranges by the user.
     # https://zensical.org/docs/authoring/code-blocks/#code-selection-button
     "content.code.select",
-
-    # Zensical can render footnotes as inline tooltips, so the user can read
-    # the footnote without leaving the context of the document.
     # https://zensical.org/docs/authoring/footnotes/#footnote-tooltips
     "content.footnote.tooltips",
 
@@ -130,7 +107,7 @@ features = [
     # When navigation paths are activated, a breadcrumb navigation is rendered
     # above the title of each page
     # https://zensical.org/docs/setup/navigation/#navigation-path
-    "navigation.path",
+    # "navigation.path",
 
     # When pruning is enabled, only the visible navigation items are included
     # in the rendered HTML, reducing the size of the built site by 33% or more.
@@ -145,7 +122,7 @@ features = [
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
