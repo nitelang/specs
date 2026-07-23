@@ -9,4 +9,4 @@ Syntax trivia represents the parts of the source code that are completely ignore
 Any kind of spaces, new lines, documentations, and comments are syntax trivia.
 
 ## Shebang
-The Nite language treats *any* line that begins with `!#` as trivia till the wery line feed.
+The Nite language treats *any* line that begins with `#!` as trivia till the wery line feed.

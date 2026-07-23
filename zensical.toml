@@ -8,7 +8,7 @@ Copyright &copy; 2026 nitelang
 """
 
 repo_url = "https://github.com/nitelang/"
-repo_name = "nitelang/specs"
+repo_name = "github/nitelang"
 edit_uri = "edit/main/docs/"
 
 exclude_docs = "README.md"
@@ -30,6 +30,22 @@ exclude_docs = "README.md"
 #
 # Read more: https://zensical.org/docs/customization/#additional-javascript
 #extra_javascript = ["javascripts/extra.js"]
+
+nav = [
+    "index.md", # TODO: replace with some landing page?
+    { "Specification" = [
+        "specification/lexical-structure/input-format.md",
+        "specification/lexical-structure/tokens.md",
+        "specification/lexical-structure/trivia.md",
+        { "Expressions" = [
+            "specification/expressions/index.md",
+            "specification/expressions/operator-expression.md"
+        ]},
+        { "Statements" = [
+
+        ]}
+    ]}
+]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options

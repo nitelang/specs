@@ -14,4 +14,16 @@ Any usage of control characters within source code is permitted, except for **Ca
 Usage of the **Null (U+0000)** character is forbidden by the standard. The compiler behaviour is undefined.
 
 ## Line endings
-The language treats invisible line endings characters as trivia, except for [multiline string literals](02-tokens.md).
+The language treats invisible line endings characters as trivia, except for [multiline string literals](tokens.md).
+
+Only allowed line ending character sequences:
+
+* `U+000A` - line feed.
+* `U+000D` + `U+000A` - cariage return followed by line feed.
+
+Handling any other line ending character sequence is not guarantee.
+
+## Tab width
+By default compiler decides the **Tab (U+0009)** character width as 4 characters long.
+
+You can override this by setting the `tab_width` or `indent_size` property in your [.editorconfig](https://editorconfig.org) file
