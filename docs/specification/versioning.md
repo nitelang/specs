@@ -1,5 +1,5 @@
 ---
-icon: lucide/receipt-text
+icon: lucide/milestone
 ---
 
 # Versioning

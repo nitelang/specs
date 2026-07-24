@@ -40,14 +40,12 @@ digit  = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 An escaped identifier is enclosed in backtick characters and may contain any character, including those that are otherwise invalid in identifiers. Escape sequences are supported inside escaped identifiers.
 
 ```ebnf
-escaped_identifier =
-    "`" { escaped_identifier_character | escape_sequence } "`" ;
+escaped_identifier = "`" { escaped_identifier_character | identifier_escape_sequence } "`" ;
 
-escaped_identifier_character =
-    ? any Unicode scalar value except LF, CR, "\", and "`" ? ;
+escaped_identifier_character = ? any Unicode scalar value except LF, CR, "\", and "`" ? ;
 
-escape_sequence =
-      "\\"
+identifier_escape_sequence
+    = "\\"
     | "\`"
     | "\a"
     | "\b"
@@ -57,15 +55,16 @@ escape_sequence =
     | "\t"
     | "\v"
     | "\0"
-    | "\u" hex_digit hex_digit hex_digit hex_digit
-    | "\U" hex_digit hex_digit hex_digit hex_digit
-           hex_digit hex_digit hex_digit hex_digit
+    | "\u" hex_digit , hex_digit , hex_digit , hex_digit
+    | "\U" hex_digit , hex_digit , hex_digit , hex_digit ,
+           hex_digit , hex_digit , hex_digit , hex_digit
     ;
 
-hex_digit =
-      digit
+hex_digit
+    = digit
     | "A" | "B" | "C" | "D" | "E" | "F"
-    | "a" | "b" | "c" | "d" | "e" | "f" ;
+    | "a" | "b" | "c" | "d" | "e" | "f"
+    ;
 ```
 
 ## Punctuators and operators
@@ -122,6 +121,39 @@ hex_digit =
 [^1]: Depending on context right shift operators can be treated as several generic parameter list close tokens.
 
 ## Literals
+Literals are tokens that used in [literal expressions](../expressions/literal-expression.md).
+
+### Numeric literals
+```ebnf
+numeric_literal = ( float_literal | integer_literal ) , [ numeric_suffix ] ;
+
+integer_literal = decimal_literal | hex_literal | binary_literal ;
+
+decimal_literal = digit , { { separator } , digit } ;
+binary_literal  = "0b" , { { separator } , binary_digit } ;
+hex_literal     = "0x" , { { separator } , hex_digit } ;
+
+float_literal  = decimal_literal , "." , decimal_literal
+               | decimal_literal , [ "." , decimal_literal ] , float_exponent;
+
+float_exponent = ( "e" | "E" ) , [ "+" | "-" ] , decimal_literal;
+
+separator    = "'" ;
+binary_digit = "0" | "1" ;
+digit        = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+hex_digit    = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+             | "A" | "B" | "C" | "D" | "E" | "F"
+             | "a" | "b" | "c" | "d" | "e" | "f"
+             ;
+
+numeric_suffix
+    = "u8" | "u16" | "u32" | "u64" | "u128" | "usize"
+    | "i8" | "i16" | "i32" | "i64" | "i128" | "isize"
+    | "f16" | "f32" | "f64"
+    ;
+```
+
+### Textual literals
 TODO
 
 ## Keywords

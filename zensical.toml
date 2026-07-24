@@ -35,10 +35,13 @@ nav = [
     "index.md", # TODO: replace with some landing page?
     { "Specification" = [
         "specification/lexical-structure/input-format.md",
+        "specification/notation.md",
+        "specification/versioning.md",
         "specification/lexical-structure/tokens.md",
         "specification/lexical-structure/trivia.md",
         { "Expressions" = [
             "specification/expressions/index.md",
+            "specification/expressions/literal-expression.md",
             "specification/expressions/operator-expression.md"
         ]},
         { "Statements" = [
